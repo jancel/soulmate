@@ -1,13 +1,13 @@
 require 'sinatra/base'
 require 'soulmate'
-require 'rack/contrib'
+# require 'rack/contrib'
 
 module Soulmate
 
   class Server < Sinatra::Base
     include Helpers
     
-    use Rack::JSONP
+    # use Rack::JSONP
     
     before do
       content_type 'application/json', :charset => 'utf-8'
